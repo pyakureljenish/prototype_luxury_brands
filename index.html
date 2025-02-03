@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Store DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Luxury Store DApp</h1>
+    <p>Your First-Hand Luxury Experience with Blockchain</p>
+  </header>
+
+  <section class="product-list">
+    <h2>Featured Products</h2>
+    <div class="product">
+      <img src="images/product1.jpg" alt="Luxury Bag">
+      <h3>Luxury Handbag</h3>
+      <p>Price: 1 ETH</p>
+      <button onclick="purchaseProduct('Luxury Handbag')">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="images/product2.jpg" alt="Designer Watch">
+      <h3>Designer Watch</h3>
+      <p>Price: 2 ETH</p>
+      <button onclick="purchaseProduct('Designer Watch')">Buy Now</button>
+    </div>
+  </section>
+
+  <section class="nft-verification">
+    <h2>NFT-Based Authenticity Verification</h2>
+    <p>Scan the QR code or NFC chip to verify your product's authenticity.</p>
+    <div class="verification-box">
+      <img src="images/qr-code.png" alt="QR Code">
+      <button onclick="verifyNFT()">Verify NFT</button>
+    </div>
+  </section>
+
+  <section class="reward-tokens">
+    <h2>Earn Reward Tokens</h2>
+    <p>For every purchase, earn ERC-20 tokens for discounts and exclusive access.</p>
+    <div class="token-balance">
+      <p>Your Token Balance: <span id="tokenBalance">0</span> Tokens</p>
+    </div>
+  </section>
+
+  <section class="transaction-history">
+    <h2>Transaction History</h2>
+    <p>View your purchase history on Etherscan.</p>
+    <div class="history-box">
+      <p>Latest Transaction: <span id="latestTransaction">None</span></p>
+      <button onclick="viewOnEtherscan()">View on Etherscan</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Luxury Store DApp. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
